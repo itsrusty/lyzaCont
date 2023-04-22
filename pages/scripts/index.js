@@ -53,12 +53,20 @@ window.addEventListener("resize", function () {
   }
 });
 
+//! dark mode
+
+// validate the mode
+localStorage.getItem("dark")
+  ? document.body.classList.add("dark")
+  : localStorage.removeItem("dark");
+
 const switchMode = document.getElementById("switch-mode");
 
 switchMode.addEventListener("change", function () {
   if (this.checked) {
     document.body.classList.add("dark");
+    localStorage.setItem("dark", "true");
   } else {
-    document.body.classList.remove("dark");
+    localStorage.removeItem("dark");
   }
 });
