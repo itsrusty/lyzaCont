@@ -27,3 +27,9 @@ const gastosRealizados = document.querySelector(".text-pagosRealizados");
 gastosRealizados.addEventListener("click", () => {
   window.location.assign("./pagos.realizados.html");
 });
+
+// gastos
+const gastos = document.querySelector(".text-gastos");
+gastos.addEventListener("click", () => {
+  window.location.assign("./gastos.html");
+});
