@@ -130,11 +130,149 @@
 
       <!-- MAIN -->
       <br />
-      <div class="content" style="position:relative; left: 30px">
-        <button class="btn btn-primary">Añadir</button>
-        <button class="btn btn-warning">Modificar</button>
+      <div class="content" style="position: relative; left: 30px">
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          data-bs-whatever="@getbootstrap"
+        >
+          Nuevo
+        </button>
       </div>
 
+      <!-- MODAL START -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Nuevo cliente
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <!-- nombre -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Nombre:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+
+                <!-- apellido -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Apellido:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+
+                <!-- Compra -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Compra:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+
+                <!-- telefono -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Telefono:</label
+                  >
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+
+                <!-- empresa -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Empresa:</label
+                  >
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+
+                <!-- Saldo inicial -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Saldo inicial:</label
+                  >
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+
+                <!-- terminos de pago -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Terminos de pago:</label
+                  >
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+
+                <!-- cuentas x cobrar -->
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Cuentas por cobrar:</label
+                  >
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="recipient-name"
+                  />
+                </div>
+
+                <!-- comentario -->
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"
+                    >Comentario:</label
+                  >
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL END -->
       <main>
         <table class="table">
           <thead>
@@ -147,6 +285,7 @@
               <th scope="col">Empresa</th>
               <th scope="col">Saldo de inicio</th>
               <th scope="col">Terminos de pago</th>
+              <th scope="col">Cuentas por cobrar</th>
               <th scope="col">Opciones</th>
             </tr>
           </thead>
@@ -160,6 +299,7 @@
               <td>Vopper</td>
               <td>3400</td>
               <td>Plazos</td>
+              <td>MXN0.00</td>
               <td><button class="btn btn-danger">Eliminar</button></td>
             </tr>
             <tr>
@@ -171,8 +311,8 @@
               <td>Vopper</td>
               <td>3400</td>
               <td>Plazos</td>
+              <td>MXN0.00</td>
               <td><button class="btn btn-danger">Eliminar</button></td>
-
             </tr>
             <tr>
               <th scope="row">3</th>
@@ -183,8 +323,8 @@
               <td>Vopper</td>
               <td>3400</td>
               <td>Plazos</td>
+              <td>MXN0.00</td>
               <td><button class="btn btn-danger">Eliminar</button></td>
-
             </tr>
           </tbody>
         </table>
