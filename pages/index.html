@@ -56,12 +56,6 @@
         </li>
         <li>
           <a href="#">
-            <i class="bx bxs-message-dots"></i>
-            <span class="text-pagos">Pagos recibidos</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
             <i class="bx bxs-group"></i>
             <span class="text-providers">Proveedores</span>
           </a>
@@ -238,7 +232,7 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">
-                    Registrar gasto
+                    Registrar tarea
                   </h1>
                   <button
                     type="button"
@@ -248,6 +242,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
+                  
                   <!-- MODAL -->
                   <form
                     class="form-data"
@@ -266,84 +261,13 @@
                       />
                     </div>
 
-                    <!-- numero de la factura -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Importe:</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="recipient-name"
-                      />
-                    </div>
-
-                    <!-- numero de la orden -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Tipo de cuenta:</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="recipient-name"
-                      />
-                    </div>
-
-                    <!-- nombre del cliente -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Proveedor:</label
-                      >
-                      <input
-                        type="phone"
-                        class="form-control"
-                        id="recipient-name"
-                      />
-                    </div>
-
-                    <!-- cantidad -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Numero de referencia:</label
-                      >
-                      <input
-                        type="phone"
-                        class="form-control"
-                        id="recipient-name"
-                      />
-                    </div>
-                    <!-- cantidad -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Nombre del cliente:</label
-                      >
-                      <input
-                        type="phone"
-                        class="form-control"
-                        id="recipient-name"
-                      />
-                    </div>
-
-                    <!-- precio unitario -->
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label"
-                        >Moneda:</label
-                      >
-                      <input
-                        type="phone"
-                        class="form-control"
-                        id="recipient-name"
-                      />
-                    </div>
-
-                    <!-- comentario -->
+                    <!-- task -->
                     <div class="mb-3">
                       <label for="message-text" class="col-form-label"
                         >Notas:</label
                       >
                       <textarea
-                        class="form-control"
+                        class="form-control taskContent"
                         id="message-text"
                       ></textarea>
                     </div>
@@ -357,7 +281,7 @@
                   >
                     Cerrar
                   </button>
-                  <button type="button" class="btn btn-primary">Guardar</button>
+                  <button type="button" class="btn btn-primary addTask">Guardar</button>
                 </div>
               </div>
             </div>
